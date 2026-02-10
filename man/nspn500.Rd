@@ -3,42 +3,14 @@
 \docType{data}
 \name{nspn500}
 \alias{nspn500}
-\alias{nspn500_3d}
-\title{nspn500 atlas}
+\title{NSPN500 Cortical Atlas}
 \format{
-An object of class \code{brain_atlas} of length 4.
-
-An object of class \code{ggseg3d_atlas} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 4 rows and 4 columns.
+A \link[ggseg.formats:ggseg_atlas]{ggseg.formats::ggseg_atlas} object (cortical).
 }
 \usage{
 nspn500
-
-nspn500_3d
 }
 \description{
-we designed a novel approach aimed at determining the best trade-off between small-world 
-attributes of anatomical cortical networks and the number of 
-cortical regions included in the scale. Results revealed that schemes comprising 540-599 
-regions (surface areas spanning between 250 and 275 mm(2)) at sparsities below 10% showed 
-a superior balance between small-world organization and the size of the cortical scale employed.
-annot files were acquired from (\href{https://github.com/faskowit/multiAtlasTT}{faskowit/multiAtlasTT})
+NSPN500 Cortical Atlas
 }
-\examples{
-data(nspn500)
-data(nspn500_3d)
-}
-\references{
-Whitaker, K. J., Vértes, P. E., Romero-Garcia, R., Váša, F., Moutoussis, M., Prabhu, G., ... & Tait, R. 
-    (2016). Adolescence is associated with genomically patterned consolidation of the hubs of the human brain connectome. 
-    Proceedings of the National Academy of Sciences, 113(32), 9105-9110.
-    Romero-Garcia, R., Atienza, M., Clemmensen, L. H., & Cantero, J. L. (2012). Effects of network resolution on 
-    topological properties of human neocortex. Neuroimage, 59(4), 3522-3532.
-    (\href{https://pubmed.ncbi.nlm.nih.gov/22094643/}{PubMed})
-    
-\itemize{
- \item{nspn500}{ - nspn500 atlas}
- \item{nspn500_3d}{ - nspn500 3d mesh atlas}
-}
-}
-\concept{ggseg_atlases ggseg3d_atlases}
 \keyword{datasets}
