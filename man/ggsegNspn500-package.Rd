@@ -13,8 +13,8 @@ NSPN500 cortical atlas for the 'ggseg' ecosystem. Provides a unified 'ggseg_atla
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/ggseg/ggsegNspn500}
-  \item Report bugs at \url{https://github.com/ggseg/ggsegNspn500/issues}
+  \item \url{https://github.com/ggsegverse/ggsegNspn500}
+  \item Report bugs at \url{https://github.com/ggsegverse/ggsegNspn500/issues}
 }
 
 }

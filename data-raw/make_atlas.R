@@ -11,11 +11,12 @@
 # Run with: Rscript data-raw/make_atlas.R
 
 library(dplyr)
-library(ggsegExtra)
+library(ggseg.extra)
 library(ggseg.formats)
 
 options(freesurfer.verbose = FALSE)
-future::plan(future::multisession(workers = 4))
+options(chromote.timeout = 120)
+future::plan(future::sequential)
 progressr::handlers("cli")
 progressr::handlers(global = TRUE)
 
@@ -34,7 +35,7 @@ for (f in annot_files) {
 
 cli::cli_h1("Creating nspn500 cortical atlas")
 
-atlas_raw <- create_cortical_atlas(
+atlas_raw <- create_cortical_from_annotation(
   input_annot = annot_files,
   atlas_name = "nspn500",
   output_dir = "data-raw",
@@ -49,9 +50,6 @@ print(sort(unique(atlas_raw$core$region)))
 
 atlas_raw <- atlas_raw |>
   atlas_region_contextual("unknown", "label")
-
-atlas_raw <- atlas_raw |>
-  atlas_view_gather()
 
 nspn500 <- atlas_raw
 

@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/ggseg/ggsegNspn500/workflows/R-CMD-check/badge.svg)](https://github.com/ggseg/ggsegNspn500/actions)
+[![R-CMD-check](https://github.com/ggsegverse/ggsegNspn500/workflows/R-CMD-check/badge.svg)](https://github.com/ggsegverse/ggsegNspn500/actions)
 [![DOI](https://zenodo.org/badge/417535612.svg)](https://zenodo.org/badge/latestdoi/417535612)
 
 <!-- badges: end -->
@@ -24,18 +24,18 @@ Romero-Garcia, R., Atienza, M., Clemmensen, L. H., & Cantero, J. L.
 neocortex. Neuroimage, 59(4), 3522-3532.
 
 To learn how to use these atlases, please look at the documentation for
-[ggseg](https://ggseg.github.io/ggseg/) and
-[ggseg3d](https://ggseg.github.io/ggseg3d)
+[ggseg](https://ggsegverse.github.io/ggseg/) and
+[ggseg3d](https://ggsegverse.github.io/ggseg3d)
 
 ## Installation
 
 We recommend installing the ggseg-atlases through the ggseg
-[r-universe](https://ggseg.r-universe.dev/ui#builds):
+[r-universe](https://ggsegverse.r-universe.dev/ui#builds):
 
 ``` r
 # Enable this universe
 options(repos = c(
-    ggseg = 'https://ggseg.r-universe.dev',
+    ggsegverse = 'https://ggsegverse.r-universe.dev',
     CRAN = 'https://cloud.r-project.org'))
 
 # Install some packages
@@ -47,7 +47,7 @@ You can install the released version of ggsegNspn500 from
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("ggseg/ggsegNspn500")
+remotes::install_github("ggsegverse/ggsegNspn500")
 ```
 
 ``` r
