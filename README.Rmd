@@ -57,7 +57,7 @@ library(ggseg)
 library(ggseg3d)
 library(ggsegNspn500)
 
-plot(nspn500) +
+plot(nspn500()) +
   theme(legend.position = "bottom", 
         legend.text = element_text(size = 9)) +
   guides(fill = guide_legend(ncol = 5))
@@ -66,14 +66,14 @@ plot(nspn500) +
 
 ```{r "noneval", eval=FALSE}
 library(dplyr)
-ggseg3d(atlas = nspn500_3d) %>% 
+ggseg3d(atlas = nspn500()) %>% 
   add_glassbrain() %>% 
   pan_camera("right lateral")
 ```
 
 ```{r "orca", include=FALSE}
 library(dplyr)
-p <- ggseg3d(atlas = nspn500_3d) %>%
+p <- ggseg3d(atlas = nspn500()) %>%
   add_glassbrain(hemisphere = "left")%>%
   pan_camera("right lateral") %>%
   plotly::add_annotations( text="Screen capture",
