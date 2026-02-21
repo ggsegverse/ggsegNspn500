@@ -12,3 +12,4 @@ A \link[ggseg.formats:ggseg_atlas]{ggseg.formats::ggseg_atlas} object (cortical)
 \description{
 NSPN500 Cortical Atlas
 }
+\concept{ggseg_atlases}
