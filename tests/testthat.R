@@ -1,5 +1,4 @@
 library(testthat)
+library(ggsegNspn500)
 
 test_check("ggsegNspn500")
-
-# covr::zero_coverage(covr::package_coverage("."))
