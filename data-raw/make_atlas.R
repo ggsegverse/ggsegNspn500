@@ -24,7 +24,6 @@ nspn500 <- create_cortical_from_annotation(
   input_annot = annot_files,
   atlas_name = "nspn500",
   output_dir = "data-raw",
-  tolerance = 0,
   skip_existing = TRUE,
   cleanup = FALSE
 ) |>
